@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap');
-
+:root{
+--Very-Pale-Cyan: hsl(193, 100%, 96%);
+ --Very-DarkCyan:hsl(192, 100%, 9%);
+--Grayish-Blue: hsl(208, 11%, 55%);
+}
 body {
     font-size: 18px;
 }
@@ -28,28 +32,73 @@ nav img{
 nav button {
     width: 10rem;
 }
-
-
-
-
-
-
-.footer{
-    background-color:hsl(192, 100%, 9%) ;
-    
-    
+.last{
+    background-color:var(--Very-DarkCyan) ;
+    height: 600px;
+    margin-top: 20rem;
 }
-
-
-.container{
-
+.last button{
+    background-color: palevioletred;
+}
+.giz{
+    background-color: white;
+    height: 200px;
+    width: 600px;
+    align-items: center;
     position: relative;
-    bottom: 150px;
-    
-    border-radius: 5px;
+    translate: 50% 50%;
+    bottom: 15rem;
+    text-align: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+.giz h2{
+    padding-top: 3rem;
+}
+.giz button{
+    margin-top: 2rem;
+}
+.foot{
+ position: absolute;
+}
+.foot img{
+    background-color: white;
+
+}
+.out{
+    color: white;
+    padding-top: 2rem;
+}
+.out a{
+    text-decoration: unset;
 }
 
-.footer button {
-    background-color: hsl(322, 100%, 66%);
+@media screen and (max-width: 400px) {
+    .last{
+        height: 1100px;
+    }
+    .giz{
+        translate: 0% 0%;
+        align-items: start;
+        justify-content: start;
+        display: grid;
+        width: 390px;
+        height: 200px;
+        margin-top: 3rem;
+    }
+    .giz button{
+        margin-bottom: 1rem;
+        width: 300px;
+    }
+    .giz h2{
+        padding-top: 0.01rem;
+    }
+    
 }
+
+
+
+
+
+
 
